@@ -1,6 +1,6 @@
 ## Проект IRLINE
 
-[Demo тестового проекта](https://github.com/Evgenymir/test-kodeks/public/index.html)
+[Demo тестового проекта](https://evgenymir.github.io/test-kodeks/public/index.html)
 
 ## Описание
 Взависимости от введенных в поле значений - фильтрует их по блокам. 
