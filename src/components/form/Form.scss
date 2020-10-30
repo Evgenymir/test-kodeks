@@ -1,0 +1,34 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.form {
+    background-color: $white;
+}
+
+.field {
+    position: relative;
+    width: 90%;
+
+    &__input {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        line-height: 50px;
+        border: 1px solid $grey;
+        border-radius: 10px;
+        padding: 0 15px;
+    }
+
+    &__error {
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 12px;
+        line-height: 12px;
+        color: $red;
+        border-top: none;
+        margin-left: 15px;
+    }
+}

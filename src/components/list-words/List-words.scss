@@ -1,0 +1,21 @@
+.list-words {
+    list-style-type: none;
+
+    &--color-white {
+        .list-words__item {
+            color: #ffffff;
+        }
+    }
+
+    &__item {
+        font-size: 18px;
+        line-height: 18px;
+        color: #252525;
+        margin-bottom: 5px;
+    }
+
+    &__item-quantity {
+        font-weight: 700;
+        margin-left: 10px;
+    }
+}

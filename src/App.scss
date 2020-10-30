@@ -1,0 +1,23 @@
+@import './assets/scss/font';
+@import './assets/scss/normalize';
+@import './assets/scss/setting';
+@import './assets/scss/mixins';
+
+.main-content {
+    min-height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.wrapper-block {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    @include tablets {
+        width: 100%;
+    }
+}
