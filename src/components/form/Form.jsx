@@ -13,6 +13,16 @@ const mapStateToProps = (state) => {
 };
 
 class Forms extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.refFocusInput = React.createRef();
+    }
+
+    componentDidMount() {
+        this.refFocusInput.current.focus();
+    }
+
     handleChangeInput = ({ target }) => {
         const { dispatch } = this.props;
         dispatch(updateText(target.value));
@@ -22,6 +32,7 @@ class Forms extends React.Component {
         if (e.key !== 'Enter') {
             return;
         }
+
         const { text, dispatch } = this.props;
 
         if (text.trim() === '') {
@@ -29,7 +40,7 @@ class Forms extends React.Component {
             return;
         }
 
-        dispatch(addWords(text));
+        dispatch(addWords(text.trim()));
     };
 
     render() {
@@ -45,6 +56,7 @@ class Forms extends React.Component {
                         onChange={this.handleChangeInput}
                         onKeyPress={this.handleKeyPressEnter}
                         placeholder="Введите текст"
+                        ref={this.refFocusInput}
                     />
                     { error && <span className="field__error">{error}</span> }
                 </div>

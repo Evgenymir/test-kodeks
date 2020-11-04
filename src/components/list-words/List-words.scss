@@ -1,5 +1,9 @@
 .list-words {
+    width: 100%;
+    height: 100%;
+    text-align: center;
     list-style-type: none;
+    overflow: auto;
 
     &--color-white {
         .list-words__item {

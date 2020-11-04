@@ -1,6 +1,6 @@
 const checkWordsForRegex = (words) => {
-    const regNumber = /^[0-9]+(\.|,)?[0-9,.]+?[^.,]$/;
-    const regLetter = /^\D+$/;
+    const regNumber = /^\d+$/;
+    const regLetter = /^[a-zA-Zа-яА-Я ]+$/;
 
     if (words.match(regNumber)) {
         return 'numbers';
